@@ -1,0 +1,1632 @@
+:root {
+    --default-margin-top: 100px;
+    --default-margin-bottom: 100px;
+    --default-clr-white: #ffffff;
+    --default-clr-like-orange: #ff724a;
+    --default-clr-light-orange-w-white: #ffc7b7;
+    --default-font-family: 'Open Sans', sans-serif;
+    --default-clr-black: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:767px) {
+    .show-for-small-only {
+        display: block !important;
+    }
+
+    .hide-for-small-only {
+        display: none !important;
+    }
+
+    .show-for-all-device {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .show-for-small-only {
+        display: none !important;
+    }
+
+    .hide-for-small-only {
+        display: block !important;
+    }
+
+    .show-for-all-device {
+        display: block !important;
+    }
+}
+
+/* Logo and Menubar */
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo-img {
+    width: 67px;
+    height: 33px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.menubar-par {
+    width: 36px;
+    height: auto;
+}
+
+.menubar-par img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .header-logo {
+        margin: 25px 167px;
+    }
+
+    .logo-img {
+        width: 64px;
+        height: 30px;
+    }
+
+    .menubar-par {
+        width: 34px;
+        height: auto;
+    }
+}
+
+/* Dental Clinic Welcome Section */
+
+.dental-clinic-welcome-sec {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-sec-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: var(--default-font-family);
+    margin-bottom: 30px;
+}
+
+.welcome-sec-content-container h2 {
+    font-weight: 100;
+    font-size: 18.5px;
+    letter-spacing: 3px;
+    color: var(--default-clr-black);
+    margin: 0;
+}
+
+.welcome-sec-content-container h3 {
+    font-weight: 700;
+    color: var(--default-clr-black);
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 27px 0 0;
+}
+
+.icon-address-contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0px 0px;
+}
+
+.icon-for-addr-location {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.icon-for-addr-location img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.addresses-contacts-container h6 {
+    font-weight: 500;
+    font-size: 17px;
+    margin: 35px 0 0;
+}
+
+.freepik {
+    color: black;
+    border-bottom: solid 1px black;
+    text-decoration: none;
+}
+
+.freepik:hover {
+    border-bottom: solid 1px var(--default-clr-like-orange);
+    cursor: pointer;
+}
+
+.dental-clinic-welcome-btn {
+    width: 224px;
+    height: 70px;
+    color: var(--default-clr-like-orange);
+    border: solid 2px var(--default-clr-like-orange);
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-color: var(--default-clr-white);
+    padding: 24px 44px;
+    margin: 37px 0 0;
+}
+
+.dental-clinic-welcome-btn:hover {
+    color: var(--default-clr-white);
+    background-color: var(--default-clr-like-orange);
+    cursor: pointer;
+}
+
+.welcome-img-container {
+    background-image: url(../pages-images/dental-welcome-img.jpg);
+    background-position-x: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 346px;
+}
+
+@media screen and (min-width:768px) {
+    .dental-clinic-welcome-sec {
+        margin-top: 90px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcome-sec-content-container {
+        width: 50%;
+        margin-bottom: 0;
+        /* background-color: red; */
+    }
+
+    .welcome-sec-wraper {
+        max-width: 46%;
+        /* background-color: green; */
+        margin-left: 31%;
+
+    }
+
+    .welcome-sec-content-container h2 {
+        font-weight: 100;
+        font-size: 18.5px;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+
+    .welcome-sec-content-container h3 {
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin: 27px 0 0;
+    }
+
+    .icon-address-contact-info {
+        margin: 20px 0px 0px;
+    }
+
+    .icon-for-addr-location {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .contact-info p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .addresses-contacts-container h6 {
+        font-size: 17px;
+        margin: 35px 0 0;
+    }
+
+    .dental-clinic-welcome-btn {
+        border-radius: 4px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding: 24px 44px;
+        margin: 37px 0 0;
+    }
+
+    .welcome-img-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome-img-container {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Dental Services Section */
+
+.dental-services-container {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--default-font-family);
+}
+
+.services-container {
+    background-color: var(--default-clr-like-orange);
+    width: 343px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dental-service-icon-img {
+    width: 65px;
+    height: 65px;
+}
+
+.dental-service-icon-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.dental-service-content h2 {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--default-clr-white);
+    letter-spacing: 1px;
+    margin: 20px 0 0;
+}
+
+.dental-service-content h3 {
+    font-weight: 300;
+    color: var(--default-clr-white);
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.dental-service-content a {
+    color: var(--default-clr-white);
+    margin: 20px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: solid 1px var(--default-clr-white);
+}
+
+.dental-service-content a:hover {
+    border-color: var(--default-clr-light-orange-w-white);
+}
+
+@media screen and (min-width:768px) {
+    .dental-services-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-container {
+        width: 270px;
+        height: 288px;
+        margin: 0 20px 0px 0;
+        border-radius: 10px;
+    }
+
+    .dental-service-icon-img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .dental-service-content h2 {
+        font-size: 18px;
+        letter-spacing: 1.7px;
+        margin: 20px 0 0;
+    }
+
+    .dental-service-content h3 {
+        font-size: 17px;
+        margin: 20px 0;
+        line-height: 28px;
+    }
+
+    .dental-service-content a {
+        margin: 20px 0 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Mission, Vision and History - Section */
+.mission-vision-history-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--default-margin-top);
+}
+
+.m-v-h-circle-heading-para-container {
+    width: 336px;
+    height: 287px;
+    margin-bottom: 6px;
+    padding: 10px 32px;
+}
+
+.m-v-h-heading h2 {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    padding: 0px 64px;
+}
+
+.m-v-h-circle {
+    width: 50px;
+    height: 53px;
+    background-color: var(--default-clr-like-orange);
+    border-radius: 100%;
+    padding-left: 5px;
+}
+
+.m-v-h-heading-para h3 {
+    font-family: var(--default-font-family);
+    color: #999999;
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 37px;
+    margin: 25px 0 20px;
+}
+
+.m-v-h-heading-para p {
+    font-family: var(--default-font-family);
+    color: #999999;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .mission-vision-history-container {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 130px;
+    }
+
+    .mission-vision-history-pair-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-v-h-circle-heading-para-container {
+        width: 462px;
+        height: 209px;
+        margin-bottom: 6px;
+        padding: 10px 32px;
+        position: relative;
+        justify-content: space-around;
+        align-items: space-around;
+        margin-left: 50px;
+    }
+
+    .first-circle-of-pair {
+        position: absolute;
+        left: -52px;
+        top: 13px;
+    }
+
+    .second-circle-of-pair {
+        position: absolute;
+        right: 518px;
+        top: 13px;
+    }
+
+    .m-v-h-heading h2 {
+        font-family: var(--default-font-family);
+        color: var(--default-clr-black);
+        font-weight: bold;
+        font-size: 65px;
+        text-align: center;
+        padding: 0px 64px;
+        margin-bottom: 40px;
+    }
+
+    .m-v-h-circle {
+        width: 48px;
+        height: 51px;
+        background-color: var(--default-clr-like-orange);
+        border-radius: 100%;
+        padding-left: 5px;
+    }
+
+    .m-v-h-heading-para h3 {
+        font-family: var(--default-font-family);
+        color: #999999;
+        font-weight: 100;
+        font-size: 25px;
+        letter-spacing: 3px;
+        line-height: 37px;
+        margin: 0px 0 20px;
+    }
+
+    .m-v-h-heading-para p {
+        font-family: var(--default-font-family);
+        color: #999999;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+/* Dental Care About Us */
+.dental-care-aboutus-section {
+    margin-top: 30px;
+}
+
+.about-us-container {
+    background-image: url(../pages-images/dentist-with-dentistry-tools-isolatedf-min.jpg);
+    background-position: 64.3% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 796px;
+    margin: 0;
+}
+
+.about-us-content-container h2,
+h3,
+p {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+}
+
+.about-us-content-container {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.about-us-content-container h2 {
+    font-weight: 100;
+    font-size: 18.5px;
+    letter-spacing: 3px;
+    color: var(--default-clr-black);
+    padding: 52px 0 0;
+}
+
+.about-us-content-container h3 {
+    font-weight: 700;
+    color: var(--default-clr-black);
+    font-size: 29px;
+    letter-spacing: 1px;
+    margin: 27px 0 0;
+    line-height: 31px;
+}
+
+.about-us-content-container p {
+    font-weight: 300;
+    color: var(--default-clr-black);
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 29px;
+    margin: 20px 0;
+}
+
+.about-us-content-container .aboutus-heighlight {
+    color: var(--default-clr-black);
+    margin: 20px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: solid 1px black;
+}
+
+.about-us-content-container a:hover {
+    border: none;
+}
+
+.about-us-container h6 {
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 35px 0 0 30px;
+}
+
+.about-us-freepik {
+    color: black;
+    border-bottom: solid 1px black;
+    text-decoration: none;
+}
+
+.about-us-freepik:hover {
+    border: none;
+    color: var(--default-clr-like-orange);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .dental-care-aboutus-section {
+        margin-top: 30px;
+    }
+
+    .about-us-container {
+        margin-top: 50px;
+        background-image: url(../pages-images/dentist-with-dentistry-tools-isolatedf-min.jpg);
+        background-position: 64.3% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 679px;
+        margin: 0;
+    }
+
+    .about-us-content-container {
+        width: 50%;
+        padding-left: 0;
+        /* background-color: red; */
+    }
+
+    .dental-care-services-aboutus-wraper {
+        width: 72%;
+        margin-left: 25%;
+        /* background-color: green; */
+    }
+
+    .about-us-content-container h2 {
+        font-size: 20.5px;
+        letter-spacing: 3px;
+        padding: 135px 0 0;
+    }
+
+    .about-us-content-container h3 {
+        font-size: 58px;
+        letter-spacing: 1.5px;
+        margin: 29px 0 0;
+        line-height: 60px;
+    }
+
+    .about-us-content-container .aboutus-heighlight {
+        margin: 20px 0 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .about-us-container h6 {
+        font-size: 18.5px;
+        margin: 49px 0 0 191px;
+    }
+
+    .dental-care-para-for-desktop {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .dental-care-para-for-desktop p {
+        font-size: 16.5px;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+        margin: 0;
+        padding: 31px 20px 0px 0px;
+    }
+}
+
+/* What People Say Section */
+.people-saying-container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people-say-heading h2 {
+    font-family: var(--default-font-family);
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 0 56px;
+}
+
+.review-from-a-person {
+    width: 306px;
+    height: 334px;
+    background-color: var(--default-clr-like-orange);
+    padding: 20px 16px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.people-name-and-review h3 {
+    font-family: Montserrat, sans-serif;
+    color: var(--default-clr-white);
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 12px;
+}
+
+.people-name-and-review p {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-white);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 20px;
+    border-bottom: solid 1px #ff9c80;
+    padding-bottom: 25px;
+}
+
+.people-name-and-review h4 {
+    font-family: Montserrat, sans-serif;
+    color: var(--default-clr-white);
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 38px;
+}
+
+.review-from-a-person-icon {
+    width: 63px;
+}
+
+.review-from-a-person-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .people-saying-container {
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .people-say-heading h2 {
+        font-size: 61px;
+        margin: 0 0 62px;
+    }
+
+    .people-review-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review-from-a-person {
+        width: 282px;
+        height: 353px;
+        padding: 20px 32px;
+        margin: 0 30px 0 0;
+        border-radius: 10px;
+    }
+
+    .people-name-and-review h3 {
+        font-size: 22px;
+        margin-top: 13px;
+    }
+
+    .people-name-and-review p {
+        font-size: 17px;
+        line-height: 30px;
+        margin-top: 20px;
+        padding-bottom: 31px;
+    }
+
+    .people-name-and-review h4 {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-top: 37px;
+    }
+
+    .review-from-a-person-icon {
+        width: 68px;
+        margin-top: 2px;
+    }
+}
+
+/* Quality Oral Health Care Section */
+.quality-oral-healthcare-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 85px;
+}
+
+.quality-oral-healthcare-img {
+    background-image: url(/pages-images/quality-oral-healthcare-img.jpg);
+    background-position-x: -36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 310px;
+}
+
+.quality-oral-healthcare-content-container {
+    font-family: var(--default-font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.quality-oral-healthcare-wraper {
+    width: 73%;
+}
+
+.quality-oral-healthcare-wraper h2 {
+    font-weight: 100;
+    font-size: 18.5px;
+    letter-spacing: 3px;
+    color: var(--default-clr-black);
+    margin: 0;
+}
+
+.quality-oral-healthcare-wraper p {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 34px;
+    margin-top: 22px;
+}
+
+.quality-oral-healthcare-wraper h3 {
+    font-weight: 700;
+    color: var(--default-clr-black);
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin: 27px 0 0;
+}
+
+.quality-oral-healthcare-wraper h6 {
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 35px 0 0;
+}
+
+@media screen and (min-width:768px) {
+    .quality-oral-healthcare-section {
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .quality-oral-healthcare-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* .quality-oral-healthcare-img {
+        width: 60%;
+        height: auto;
+    }
+
+    .quality-oral-healthcare-img img {
+        width: 100%;
+        height: 100%;
+    } */
+
+    .quality-oral-healthcare-img {
+        background-image: url(/pages-images/quality-oral-healthcare-img.jpg);
+        background-position-x: -54px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 65%;
+        height: 617px;
+    }
+
+    .quality-oral-healthcare-content-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .quality-oral-healthcare-wraper {
+        width: 70%;
+        margin-right: 35%;
+    }
+
+    .quality-oral-healthcare-wraper h2 {
+        font-size: 19.5px;
+        letter-spacing: 3.2px;
+        margin: 0;
+    }
+
+    .quality-oral-healthcare-wraper p {
+        font-size: 17px;
+        line-height: 34px;
+        margin-top: 22px;
+    }
+
+    .quality-oral-healthcare-wraper h3 {
+        font-size: 47px;
+        letter-spacing: 1px;
+        margin: 20px 0 0;
+    }
+
+    .quality-oral-healthcare-wraper h6 {
+        font-size: 17px;
+        margin: 35px 0 0;
+    }
+}
+
+/* Our Team Section */
+
+.our-team-section {
+    margin-top: 80px;
+    background-color: var(--default-clr-like-orange);
+}
+
+.our-team-sec-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-team-heading {
+    text-align: center;
+    padding: 0 50px;
+    margin: 55px 0px;
+}
+
+.our-team-heading h2 {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-white);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.our-team-heading h3 {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-white);
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 38px;
+    margin-top: 26px;
+}
+
+.about-general-dentist h4 {
+    font-family: var(--default-font-family);
+    color: #b3b3b3;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    letter-spacing: 0.4px;
+}
+
+.about-general-dentist h5 {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    margin-top: 16px;
+}
+
+.about-general-dentist p {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-size: 17px;
+    line-height: 29px;
+    margin-top: 9px;
+}
+
+.about-general-dentist {
+    padding: 0 5px;
+    height: 185px;
+}
+
+.a-doctor-sec {
+    width: 314px;
+    height: 555px;
+    background-color: var(--default-clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 33px 20px 25px;
+    border-radius: 0 10px 10px 0;
+}
+
+.doctor-img {
+    width: 304px;
+    height: auto;
+}
+
+.doctor-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.contact-us-using-socialmedia {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 26px 0 0;
+}
+
+.socialmedia-icon {
+    width: 32px;
+    height: auto;
+    margin: 0 27px 0 6px;
+}
+
+.socialmedia-icon img,
+.twitter-icon img {
+    width: 100%;
+}
+
+.twitter-icon {
+    width: 42px;
+    margin-top: -4px;
+    margin-right: 22px;
+}
+
+.our-team-sec-container h6 {
+    font-family: var(--default-font-family);
+    font-weight: 100;
+    color: var(--default-clr-white);
+    font-size: 18px;
+    margin: 8px 0 49px;
+}
+
+.our-team-freepik {
+    color: var(--default-clr-white);
+    margin: 20px 0 0;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    border-bottom: solid 1px var(--default-clr-white);
+}
+
+.our-team-sec-container h6 a:hover {
+    color: var(--default-clr-light-orange-w-white);
+    border-color: var(--default-clr-light-orange-w-white);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .our-team-section {
+        margin-top: 80px;
+    }
+
+    .our-team-sec-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-team-heading {
+        text-align: center;
+        padding: 0 51px;
+        margin: 55px 338px;
+    }
+
+    .our-team-heading h2 {
+        font-size: 62px;
+    }
+
+    .our-team-heading h3 {
+        font-size: 21px;
+        line-height: 38px;
+        margin-top: 31px;
+    }
+
+    .about-general-dentist h4 {
+        font-size: 16px;
+        margin-top: 17px;
+        letter-spacing: 0.7px;
+    }
+
+    .about-general-dentist h5 {
+        font-size: 30px;
+        letter-spacing: 1.3px;
+        margin-top: 16px;
+    }
+
+    .about-general-dentist p {
+        font-size: 17.3px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .about-general-dentist {
+        padding: 0 9px;
+        height: 185px;
+    }
+
+    .seperate-three-doc-show-only-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .our-team-all-doctors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a-doctor-sec {
+        width: 320px;
+        height: 600px;
+        margin: 0 30px 30px 0;
+        padding: 33px 20px 25px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .doctor-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .doctor-img img {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .contact-us-using-socialmedia {
+        margin: 27px 0 0;
+    }
+
+    .socialmedia-icon {
+        width: 33px;
+        height: auto;
+        margin: 0 28px 0 7px;
+    }
+
+    .twitter-icon {
+        width: 43px;
+        margin-top: -5px;
+        margin-right: 20px;
+    }
+
+    .our-team-sec-container h6 {
+        font-size: 19px;
+        margin: 9px 0 50px;
+        letter-spacing: 0.5px;
+    }
+
+    .our-team-freepik {
+        margin: 21px 0 0;
+        font-size: 19px;
+        letter-spacing: 0.8px;
+        border-bottom: solid 1px var(--default-clr-white);
+    }
+}
+
+/* Dentistry Clinic Section */
+
+.dentitry-clinic-sec-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.dentistry-clinic-img {
+    background-image: url(/pages-images/dentistry-clinic-img.jpg);
+    background-position-x: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 310px;
+}
+
+.dentistry-clinic-content-container {
+    font-family: var(--default-font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-left: 23px;
+}
+
+.dentistry-clinic-content-wraper {
+    width: 79%;
+}
+
+.dentistry-clinic-content-wraper h2 {
+    font-weight: 100;
+    font-size: 18.5px;
+    letter-spacing: 3px;
+    color: var(--default-clr-black);
+    margin: 0;
+}
+
+.dentistry-clinic-content-wraper h3 {
+    font-weight: 700;
+    color: var(--default-clr-black);
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 37px;
+    margin: 27px 0 0;
+}
+
+.dentitry-clinic-heading {
+    width: 53%;
+}
+
+.dentistry-clinic-content-wraper p {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 22px;
+}
+
+.dentistry-clinic-content-wraper h6 {
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 35px 0 0;
+}
+
+.dental-clinic-contact-us-btn {
+    width: 220px;
+    height: 70px;
+    border-radius: 4px;
+    color: var(--default-clr-like-orange);
+    border: solid 2px var(--default-clr-like-orange);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 24px 44px;
+    margin: 37px 0 0;
+    background-color: var(--default-clr-white);
+}
+
+.dental-clinic-contact-us-btn:hover {
+    color: var(--default-clr-white);
+    background-color: var(--default-clr-like-orange);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .dentistry-clinic-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dentitry-clinic-sec-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .dentistry-clinic-img {
+        background-image: url(/pages-images/dentistry-clinic-img.jpg);
+        background-position-x: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 65%;
+        height: 617px;
+    }
+
+    .dentistry-clinic-content-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .dentistry-clinic-content-wraper {
+        width: 72%;
+        margin-left: 24%;
+    }
+
+    .dentistry-clinic-content-wraper h2 {
+        font-size: 19.5px;
+        letter-spacing: 2.2px;
+        margin: 0;
+    }
+
+    .dentistry-clinic-heading {
+        width: 50%;
+    }
+
+    .dentistry-clinic-content-wraper p {
+        font-size: 17px;
+        line-height: 34px;
+        margin-top: 22px;
+    }
+
+    .dentistry-clinic-content-wraper h3 {
+        font-size: 47px;
+        letter-spacing: 1px;
+        line-height: 50px;
+        margin: 20px 0 0;
+    }
+
+    .dentistry-clinic-content-wraper h6 {
+        font-size: 17px;
+        margin: 35px 0 0;
+    }
+}
+
+/* Contact Us Section */
+.contact-us-sec-container {
+    margin-top: 120px;
+}
+
+.contact-sec-img {
+    background-image: url(../pages-images/Contact-us-sec-img.jpg);
+    background-position-x: -151px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 360px;
+}
+
+.contact-us-sec-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px 0 0 52px;
+}
+
+.contact-us-sec-form-container h2 {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 1.44px;
+}
+
+label,
+input,
+button,
+.tearm-of-services {
+    font-family: var(--default-font-family);
+}
+
+form {
+    margin-top: 25px;
+}
+
+input,
+textarea {
+    font-weight: 100;
+    color: #c0c0c0;
+    font-size: 15.5px;
+    width: 300px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px #c0c0c0;
+    margin: 16px 0 21px 0;
+    padding: 0 0 13px 11px;
+}
+
+label {
+    color: var(--default-clr-black);
+    font-weight: 100;
+    font-size: 17px;
+}
+
+#checkbox-id {
+    width: auto;
+}
+
+.tearm-of-services {
+    color: var(--default-clr-like-orange);
+    text-decoration: none;
+}
+
+.form-submit-btn {
+    width: 300px;
+    height: 69px;
+    background-color: var(--default-clr-like-orange);
+    color: var(--default-clr-white);
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.form-submit-btn:hover {
+    background-color: var(--default-clr-light-orange-w-white);
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: var(--default-clr-black);
+    font-family: var(--default-font-family);
+
+}
+
+@media screen and (min-width: 768px) {
+    .contact-us-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact-us-sec-container {
+        margin-top: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+    }
+
+    .contact-sec-img {
+        background-image: url(../pages-images/Contact-us-sec-img.jpg);
+        background-position-x: -216px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 54%;
+        height: 623px;
+    }
+
+    .contact-us-sec-form-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: -686px;
+        margin-top: 128px;
+    }
+
+    .contact-us-sec-form-container h2 {
+        font-size: 45px;
+        letter-spacing: 1.44px;
+    }
+
+    form {
+        margin-top: 28px;
+    }
+
+    input,
+    textarea {
+        font-size: 16.5px;
+        width: 487px;
+        margin: 16px 0 21px 0;
+        padding: 0 0 13px 11px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    #checkbox-id {
+        width: auto;
+        margin: 0 0 22px 0;
+    }
+
+    .form-submit-btn {
+        width: 502px;
+        height: 69px;
+        font-size: 16.5px;
+        letter-spacing: 0.6px;
+        border-radius: 5px;
+        border-style: none;
+    }
+}
+
+/* Call location hours details section */
+.call-loc-hrs-whole-dtls-wraper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-content-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 300px;
+    /* height: 161px; */
+    background-color: var(--default-clr-like-orange);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.call-loc-hrs-img {
+    width: 22px;
+    min-height: 22px;
+    margin-right: 5px;
+}
+
+.call-loc-hrs-img img {
+    width: 100%;
+}
+
+.img-and-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-content-wrap h2,
+.img-content-wrap p {
+    color: var(--default-clr-white);
+    font-family: var(--default-font-family);
+}
+
+.img-content-wrap h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.img-content-wrap p {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-white);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.call-loc-hrs-dtls-sec-container h6 {
+    font-family: var(--default-font-family);
+    color: var(--default-clr-black);
+    font-weight: 500;
+    font-size: 17px;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.call-loc-hrs-freepik {
+    color: black;
+    border-bottom: solid 1px black;
+    text-decoration: none;
+}
+
+.call-loc-hrs-freepik:hover {
+    border-bottom: solid 1px var(--default-clr-like-orange);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .call-loc-hrs-whole-dtls-wraper {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-content-wrap {
+        margin-right: 20px;
+        margin-bottom: 0px;
+        width: 326px;
+        /* height: 161px; */
+        padding: 40px 27px;
+    }
+
+    .call-loc-hrs-img {
+        width: 22px;
+        min-height: 22px;
+        margin-right: 5px;
+    }
+
+    .img-content-wrap h2 {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .img-content-wrap p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .call-loc-hrs-dtls-sec-container h6 {
+        font-size: 17px;
+        margin: 30px 0 0;
+    }
+}
+
+/* Footer */
+
+.footer-container {
+    margin-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333333;
+    color: #ffffff;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.footer-container p,
+.footer-container a {
+    color: var(--default-clr-white);
+}
+
+.footer-container a:hover {
+    text-decoration: none;
+}
+
+.instruction-para {
+    font-size: 13px;
+    padding: 52px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.link-para,
+.link-para a {
+    font-size: 13px;
+    color: #ffc7b7;
+}
+
+.link-para {
+    padding: 37px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:768px) {
+    .instruction-para {
+        font-size: 15.5px;
+        padding: 58px;
+        line-height: 24px;
+    }
+
+    .link-para,
+    .link-para a {
+        font-size: 15.5px;
+    }
+
+    .link-para {
+        padding: 45px;
+    }
+}
