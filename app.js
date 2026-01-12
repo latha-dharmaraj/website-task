@@ -13,7 +13,7 @@ document.querySelector(".side-nav h3").addEventListener("click", function(){
 // })
 
 let dentalClinicPage = document.querySelector(".dental-clinic-page");
-dentalClinicPage.innerHTML = '<a href="pages/dental-clinic.html" class="dental-clinic-page-one" method="post">Dental Clinic Page</a>';
+dentalClinicPage.innerHTML = '<a href="pages/dental-clinic.html" class="dental-clinic-page-one" method="get">Dental Clinic Page</a>';
 document.querySelector(".dental-clinic-page-one").style.color = "white";
 document.querySelector(".dental-clinic-page-one").style.textDecoration = "none";
 
