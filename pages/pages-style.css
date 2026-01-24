@@ -769,7 +769,7 @@ p {
 }
 
 .quality-oral-healthcare-img {
-    background-image: url(/pages-images/quality-oral-healthcare-img.jpg);
+    background-image: url(../pages-images/quality-oral-healthcare-img.jpg);
     background-position-x: -36px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -848,7 +848,7 @@ p {
     } */
 
     .quality-oral-healthcare-img {
-        background-image: url(/pages-images/quality-oral-healthcare-img.jpg);
+        background-image: url(../pages-images/quality-oral-healthcare-img.jpg);
         background-position-x: -54px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1154,7 +1154,7 @@ p {
 }
 
 .dentistry-clinic-img {
-    background-image: url(/pages-images/dentistry-clinic-img.jpg);
+    background-image: url(../pages-images/dentistry-clinic-img.jpg);
     background-position-x: 35px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1248,7 +1248,7 @@ p {
     }
 
     .dentistry-clinic-img {
-        background-image: url(/pages-images/dentistry-clinic-img.jpg);
+        background-image: url(../pages-images/dentistry-clinic-img.jpg);
         background-position-x: 16px;
         background-repeat: no-repeat;
         background-size: cover;
